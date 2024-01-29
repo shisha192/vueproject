@@ -1,0 +1,170 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* FONT: INTER */
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-Thin.woff2") format("woff2");
+    font-display: swap;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-ExtraLight.woff2") format("woff2");
+    font-display: swap;
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-Light.woff2") format("woff2");
+    font-display: swap;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-Regular.woff2") format("woff2");
+    font-display: swap;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-Medium.woff2") format("woff2");
+    font-display: swap;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-SemiBold.woff2") format("woff2");
+    font-display: swap;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-Bold.woff2") format("woff2");
+    font-display: swap;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-ExtraBold.woff2") format("woff2");
+    font-display: swap;
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-Black.woff2") format("woff2");
+    font-display: swap;
+    font-weight: 900;
+}
+
+/* FONT: INTER */
+
+/* FONT: ChakraPetch */
+@font-face {
+    font-family: "ChakraPetch";
+    src: url("../fonts/ChakraPetch-Light.ttf") format("truetype");
+    font-display: swap;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "ChakraPetch";
+    src: url("../fonts/ChakraPetch-Regular.ttf") format("truetype");
+    font-display: swap;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "ChakraPetch";
+    src: url("../fonts/ChakraPetch-Medium.ttf") format("truetype");
+    font-display: swap;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/ChakraPetch-SemiBold.ttf") format("truetype");
+    font-display: swap;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/ChakraPetch-Bold.ttf") format("truetype");
+    font-display: swap;
+    font-weight: 700;
+}
+
+/* FONT: ChakraPetch */
+
+@layer base {
+    html {
+        @apply bg-neutral-900 font-chakraPetch text-neutral-10
+    }
+
+    input,button,textarea {
+        outline: none;
+    }
+
+    .text-gradient {
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .text-stroke {
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #434343;
+        @apply !text-neutral-900
+    }
+
+    .m-container {
+        @apply max-w-1440 mx-auto px-16 md:px-24 lg:px-108 xl:px-132 2xl:px-202;
+    }
+
+    .h1-sb {
+        @apply font-semibold text-46 md:text-50 lg:text-64 xl:text-80
+    }
+
+    .h2-sb {
+        @apply font-semibold text-28 md:text-32 lg:text-40 xl:text-48
+    }
+
+    .st-m {
+        @apply text-neutral-700 font-medium text-60 md:text-100 lg:text-124 xl:text-160
+    }
+
+    .p1-r {
+        @apply font-normal text-17/28
+    }
+
+    .b1-m {
+        @apply font-medium text-16/24
+    }
+
+    .b1-r {
+        @apply font-normal text-16/24
+    }
+
+    .b2-r {
+        @apply font-normal text-12/20
+    }
+
+    .bt-m {
+        @apply font-medium text-18/24
+    }
+}
+
+@layer components {
+    .circle {
+        @apply absolute left-1/2 top-0 h-167 w-167 -translate-x-1/2 rounded-full blur-[200px] md:h-224 md:w-224 lg:h-294 lg:w-294 2xl:h-388 2xl:w-388
+    }
+}
